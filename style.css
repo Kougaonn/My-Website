@@ -1,0 +1,59 @@
+/* Type Selectors */
+
+*{
+    color:rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(163, 106, 216);
+}
+
+h1{
+    font-size: 300%;
+}
+
+h2{
+    font-size: 200%;
+}
+
+footer{
+    font-size: 80%;
+}
+
+a{
+    font-size: 150%;
+}
+
+/* ID Selectors */
+#IDh1 {
+    color: rgb(0, 0, 0);
+}
+
+/* Class Selectors */
+.beginning {
+    color: rgb(53, 8, 53);
+}
+
+/* Relational Selectors */
+li>p{
+    font-size: 90%;
+    color: rgb(217, 233, 247);
+}
+
+/* Combination Selectors */
+h1, h2, h3{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Attribute Selectors*/
+a[href]{
+    text-decoration: underline;
+    color:rgb(0, 0, 255);
+}
+
+/* Pseudo Elements and Classes */
+a:hover{
+    color:rgb(137, 43, 226)
+}
