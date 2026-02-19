@@ -5,16 +5,38 @@ Type Selectors
 *{
     color:rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
-body{
-    background: linear-gradient(rgb(214, 81, 147), rgb(94, 22, 38));
+html{
+    background: linear-gradient(#7067CF,#EB5160);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
+body{
+    padding-right:2%;
+    padding-left:2%;
+    padding-bottom:2%;
+    margin: 1%;
+    background-color: #ECE5F0;
+    padding-top: 1%;
+    border-width: 20px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #7067CF;
+
+}
+
 h1{
     font-size: 350%;
+    text-align: center;
+    padding: 1%;
+    background-color: #221D23;
+    color:#EB5160;
 }
 
 h2{
@@ -36,39 +58,39 @@ ID Selectors
 */
 #IDh1 {
     color: rgb(0, 0, 0);
+    text-align: center;
 }
 
+#gigharbor{
+    background-image: url(gigharbor.jpg);
+    color:#221D23;
+    border-radius: 25px;
+}
 
+#bg{
+    background-color: #221D23;
+    color: #EB5160;
+}
 
 /* 
 Class Selectors 
 */
 .beginning {
-    color: rgb(53, 8, 53);
     text-decoration: underline;
+    background-color: #E9FAE3;
+    background-image: url(gigharbor.jpg);
+    color: #000000;
 }
 
     /* Rows and Columns */
 
-.right {
-    float: left;
-
-}
-
-.left {
-    float: left;   
-
-}
-
-.middle {
-    float: left;
-
-}
-
 .right, .left, .middle{
-    width: 33.33%;
-    float:left;
-    padding: 10px;
+    width: 29%;
+    padding: 1%;
+    float: left;
+    margin:1%;
+    background-color: #221D23;
+    text-align: center;
 }
 
 .row:after {
@@ -80,9 +102,8 @@ Class Selectors
 .row img{
     width: 100%;
     object-fit: contain;
+    border-radius: 25px;
 }
-
-
 
 /* 
 Relational Selectors 
@@ -90,9 +111,12 @@ Relational Selectors
 li>p{
     font-size: 110%;
     color: rgb(54, 5, 50);
+
 }
 
-
+.right>h2{
+    color:#EB5160
+}
 
 /* 
 Combination Selectors 
@@ -108,7 +132,7 @@ Attribute Selectors
 */
 a[href]{
     text-decoration: underline;
-    color:rgb(146, 14, 14);
+    color:#06AED5;
 }
 
 
@@ -117,5 +141,5 @@ a[href]{
 Pseudo Elements and Classes 
 */
 a:hover{
-    color:rgb(137, 43, 226)
+    color: #7067CF;
 }
