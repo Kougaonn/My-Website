@@ -14,7 +14,13 @@ html{
     background-attachment: fixed;
 }
 
-body{
+img{
+    width: 100%;
+    object-fit: contain;
+    margin: auto;
+}
+
+main{
     padding-right:2%;
     padding-left:2%;
     padding-bottom:2%;
@@ -28,7 +34,8 @@ body{
     border-radius: 50px;
     border-style: solid;
     border-color: #7067CF;
-
+    margin-right: 4%;
+    margin-left: 4%;
 }
 
 h1{
@@ -41,6 +48,9 @@ h1{
 
 h2{
     font-size: 250%;
+}
+
+h3{
 }
 
 footer{
@@ -77,9 +87,13 @@ Class Selectors
 */
 .beginning {
     text-decoration: underline;
-    background-color: #E9FAE3;
-    background-image: url(gigharbor.jpg);
-    color: #000000;
+    background-color: #221D23;
+
+}
+
+.top {
+    text-align: center;
+    font-size: 50px;
 }
 
     /* Rows and Columns */
@@ -103,6 +117,7 @@ Class Selectors
     width: 100%;
     object-fit: contain;
     border-radius: 25px;
+    padding-bottom: 3%;
 }
 
 /* 
@@ -114,7 +129,7 @@ li>p{
 
 }
 
-.right>h2{
+.row h2{
     color:#EB5160
 }
 
@@ -143,3 +158,31 @@ Pseudo Elements and Classes
 a:hover{
     color: #7067CF;
 }
+
+/* 
+Navigation Menu 
+*/
+
+#nav_menu{
+    width:600px;
+    margin:auto;
+}
+#nav_menu ul {
+    list-style-type: none;
+}
+#nav_menu ul li {
+    float: left;
+}
+#nav_menu ul li a{
+    text-align: center;
+    display:block;
+    width: 175px;
+    padding:1em 0;
+    text-decoration: none;
+    background-color: #221D23;
+    color:#EB5160;
+    font-weight: bold;
+    margin-right: 5px;
+}
+#nav_menu ul li a.lastitem {border-right:none;}
+#nav_menu ul li a.current {color:yellow;}
