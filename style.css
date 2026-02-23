@@ -164,7 +164,7 @@ Navigation Menu
 */
 
 #nav_menu{
-    width:600px;
+    width:100%;
     margin:auto;
 }
 #nav_menu ul {
@@ -172,17 +172,39 @@ Navigation Menu
 }
 #nav_menu ul li {
     float: left;
+    width: 33%;
 }
 #nav_menu ul li a{
     text-align: center;
     display:block;
-    width: 175px;
     padding:1em 0;
     text-decoration: none;
     background-color: #221D23;
     color:#EB5160;
     font-weight: bold;
-    margin-right: 5px;
+    margin-right: 2%;
+    margin-left: 2%;
 }
 #nav_menu ul li a.lastitem {border-right:none;}
 #nav_menu ul li a.current {color:yellow;}
+
+@media only screen and (max-width: 630px) {
+
+    #nav_menu ul li {
+    float: none;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.right, .left, .middle{
+    width: 90%;
+    padding: 3%;
+    float: none;
+    margin:2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #221D23;
+    text-align: center;
+}
+
+}
