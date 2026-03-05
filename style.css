@@ -14,28 +14,15 @@ html{
     background-attachment: fixed;
 }
 
-img{
-    width: 100%;
-    object-fit: contain;
-    margin: auto;
-}
-
 main{
-    padding-right:2%;
-    padding-left:2%;
-    padding-bottom:2%;
-    margin: 1%;
+    padding:2%;
+    margin-right: 5%;
+    margin-left: 5%;
     background-color: #ECE5F0;
-    padding-top: 1%;
-    border-width: 20px;
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 0px;
+    border-bottom-width: 20px;
     border-radius: 50px;
     border-style: solid;
     border-color: #7067CF;
-    margin-right: 4%;
-    margin-left: 4%;
 }
 
 h1{
@@ -51,6 +38,7 @@ h2{
 }
 
 h3{
+    font-size:180%;
 }
 
 footer{
@@ -61,11 +49,20 @@ a{
     font-size: 150%;
 }
 
-
+p{
+    font-size: 120%;
+}
 
 /* 
 ID Selectors 
 */
+#homeImg{
+    width: 60%;
+    object-fit: contain;
+    padding-right: 20%;
+    padding-left: 20%
+}
+
 #IDh1 {
     color: rgb(0, 0, 0);
     text-align: center;
@@ -82,6 +79,64 @@ ID Selectors
     color: #EB5160;
 }
 
+    /* Flexboxes */
+
+div#flex{
+    display: flex;
+    flex-direction: column;
+}
+
+#flex div{
+    flex-basis: 33%;
+    padding:1%;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    background-color: #ECE5F0;
+    border-bottom-width: 20px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #7067CF;
+}
+
+div>img{
+    object-fit: contain;
+    padding-top: 5%;
+    border-radius: 5em;
+    width: 100%;
+}
+
+section{
+    display:grid;
+    grid-template: repeat(4, 20%) / repeat(3, 33%);
+    grid-gap: 1% 1%;
+}
+
+section>div{
+    padding-right:1%;
+    padding-left: 1%;
+    background-color: #ECE5F0;
+    border-bottom-width: 20px;
+    border-style: solid;
+    border-color: #7067CF;
+    border-radius: 5em;
+    text-align: center;
+    place-items: center;
+}
+
+div p{
+    font-style: italic;
+}
+
+div h2{
+    background-color: #221D23;
+    padding: 2%;
+    color: #EB5160;
+    margin-right: 2%;
+    margin-left: 2%;
+    text-align: center;
+}
+
 /* 
 Class Selectors 
 */
@@ -96,14 +151,13 @@ Class Selectors
     font-size: 50px;
 }
 
-    /* Rows and Columns */
+/* Rows and Columns 
 
 .right, .left, .middle{
     width: 29%;
     padding: 1%;
     float: left;
     margin:1%;
-    background-color: #221D23;
     text-align: center;
 }
 
@@ -120,6 +174,8 @@ Class Selectors
     padding-bottom: 3%;
 }
 
+*/
+
 /* 
 Relational Selectors 
 */
@@ -130,7 +186,9 @@ li>p{
 }
 
 .row h2{
-    color:#EB5160
+    color:#EB5160;
+    background-color: #221D23;
+    padding: 10%
 }
 
 /* 
@@ -164,15 +222,15 @@ Navigation Menu
 */
 
 #nav_menu{
-    width:100%;
-    margin:auto;
+    /*Nothing to change here yet.*/
 }
 #nav_menu ul {
     list-style-type: none;
+    display:flex;
+    flex-direction:row;
 }
 #nav_menu ul li {
-    float: left;
-    width: 33%;
+    flex-basis: 33%;
 }
 #nav_menu ul li a{
     text-align: center;
@@ -182,20 +240,18 @@ Navigation Menu
     background-color: #221D23;
     color:#EB5160;
     font-weight: bold;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-right: 1%;
 }
 #nav_menu ul li a.lastitem {border-right:none;}
 #nav_menu ul li a.current {color:yellow;}
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 700px) {
 
-    #nav_menu ul li {
-    float: none;
-    width: 100%;
-    margin-bottom: 5%;
+#nav_menu ul {
+    flex-direction: column;
 }
 
+/*
 .right, .left, .middle{
     width: 90%;
     padding: 3%;
@@ -205,6 +261,11 @@ Navigation Menu
     margin-bottom: 5%;
     background-color: #221D23;
     text-align: center;
+}
+*/
+
+section{
+    display: contents;
 }
 
 }
