@@ -1,1 +1,4 @@
-This is the repository that will be used for my website, of which will be worked on throughout the quarter.
+Feedback I used for this release;
+- Images not showing up properly on Chromium-based browsers, causing images to overlap
+- Changed some colors to see if that helps with readability for users.
+- Changed some image sizes and applied rows to the About Us page for readability.
